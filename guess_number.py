@@ -2,12 +2,16 @@
 
 import random
 
-r = random.randint (1, 100)
+start = input ('Please let me know the minimum of number you want to guess: ')
+end = input ('Please let me know the maximum of number you want to guess: ')
+
+
+r = random.randint (int(start), int(end))
 
 count = 0
 while True:
     count += 1 #count = count + 1
-    num = input ('Please enter a number between 1 to 100: ')
+    num = input ('Please enter a number: ')
     num = int(num)
     if num == r:
         print ('Great, you got it!!')
